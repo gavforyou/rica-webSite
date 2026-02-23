@@ -1,0 +1,212 @@
+/* GLOBAL STYLES */
+body {
+    background: linear-gradient(rgba(18, 12, 32, 0.8), rgba(45, 15, 35, 0.9)), 
+                url('https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    color: #f8f9fa;
+    margin: 0;
+}
+
+.text-rose { color: #ff4d6d; }
+.text-gold { color: #ffc107; }
+
+.navbar {
+    background-color: rgba(10, 10, 20, 0.95);
+    border-bottom: 1px solid rgba(255, 77, 109, 0.2);
+}
+
+.navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #ff4d6d !important;
+}
+
+/* 1:1 SQUARE TIMER */
+/* UNIFIED CLOCK STYLING */
+        .timer-section { padding: 80px 0 40px; }
+        .timer-title {
+            font-family: 'Dancing Script', cursive;
+            color: #ffc107;
+            font-size: clamp(2rem, 8vw, 3.5rem);
+        }
+
+        .timer-wrapper {
+            background: rgba(255, 255, 255, 0.07);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 77, 109, 0.3);
+            padding: 30px 50px;
+            border-radius: 60px; /* Pill shape */
+            display: inline-block;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        }
+
+        .timer-display {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .timer-unit {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 80px;
+        }
+
+        .timer-unit span {
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            font-weight: 800;
+            color: #ff4d6d;
+            line-height: 1;
+            text-shadow: 0 0 20px rgba(255, 77, 109, 0.4);
+        }
+
+        .timer-unit small {
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 0.75rem;
+            color: #ffc107;
+            margin-top: 8px;
+        }
+
+        .timer-separator {
+            font-size: 3rem;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.2);
+            margin: 0 10px;
+            padding-bottom: 25px; /* Centers colon with numbers */
+        }
+
+        /* GALLERY STYLING */
+        .gallery-title {
+            font-family: 'Dancing Script', cursive;
+            color: #ffc107;
+            font-size: 3rem;
+        }
+
+        .dark-card {
+            background: rgba(30, 30, 45, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            transition: all 0.4s ease;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .dark-card:hover {
+            transform: translateY(-10px);
+            border-color: #ff4d6d;
+        }
+
+        .gallery-img {
+            height: 220px;
+            width: 100%;
+            object-fit: cover;
+            filter: brightness(0.8);
+            transition: 0.5s;
+        }
+
+/* 1:1 SQUARE MEMORY CARDS */
+.gallery-title {
+    font-family: 'Dancing Script', cursive;
+    color: #ffc107;
+    font-size: 3rem;
+}
+
+.dark-card {
+    background: rgba(30, 30, 45, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+.img-square-container {
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    overflow: hidden;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+    transition: 0.5s;
+}
+
+.card-body-custom {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-body-custom h6 {
+    color: #ff4d6d;
+    font-weight: 600;
+    margin: 0;
+}
+
+.dark-card:hover {
+    transform: translateY(-10px);
+    border-color: #ff4d6d;
+}
+
+.dark-card:hover .gallery-img {
+    transform: scale(1.1);
+    filter: brightness(1);
+}
+
+/* MESSAGE BOX */
+.message-box {
+    background: rgba(20, 20, 30, 0.85);
+    border-left: 10px solid #ff4d6d;
+    border-radius: 15px;
+}
+
+.message-box h3 { font-family: 'Dancing Script', cursive; font-size: 2.5rem; color: #ff4d6d; }
+
+.divider { border-top: 2px solid rgba(255, 77, 109, 0.3); width: 60%; margin: 0 auto; opacity: 1; }
+
+/* SOCIAL MEDIA FOOTER */
+.footer-section {
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: 80px;
+    padding-bottom: 40px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-icon {
+    color: #f8f9fa;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    border: 1px solid rgba(255, 77, 109, 0.2);
+}
+
+.social-icon:hover {
+    color: #ff4d6d;
+    background: rgba(255, 77, 109, 0.1);
+    border-color: #ff4d6d;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 77, 109, 0.3);
+}
+
+/* Optional: specific brand colors on hover */
+.social-icon:hover .fa-facebook-f { color: #1877f2; }
+.social-icon:hover .fa-instagram { color: #e4405f; }
+.social-icon:hover .fa-github { color: #ffffff; }
